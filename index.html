@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="font-size: 20px;">The Number generate was:</div>
-    <div id="numberGenerated">00</div>
+    <div id="container">
+        <div id="titleNum">The number generated was:</div>
+        <div id="numberGenerated">000</div>
+        
+        <div id="inputs">
+            <label for="initialNumber">Initial Number</label>
+            <input type="number" id="initialNumber" min="1">
+            <label for="endNumber">End Number</label>
+            <input type="number" id="endNumber" max="999">
+        </div>
+        <div>
+            <button id="btnGenerate" class="btnStyle">Manual Generate</button>
+            <button id="btnAutoGen" class="btnStyle">Automatic Generate</button>
+            <button id="btnClear" class="btnStyle">Clear</button>
+        </div>
+    </div>
 
-    <div id="buttons">
-        <label for="initialNumber">Initial Number</label>
-        <input type="number" id="initialNumber">
-        <label for="endNumber">End Number</label>
-        <input type="number" id="endlNumber">
-    </div>
-    <div>
-        <button id="btnGenerate">Generate</button>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
